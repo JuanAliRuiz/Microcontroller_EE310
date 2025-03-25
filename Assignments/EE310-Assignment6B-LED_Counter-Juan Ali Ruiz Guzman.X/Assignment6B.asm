@@ -100,7 +100,7 @@ ORG	0x60 ;Start Program at register 60
     CALL	FSRCONFIG	    ;setup the FSR
 GOTO        _start1
 _start1:
-    CALL    PRESSEDFUNC	    ; check if the buttons are still being pressed
+    CALL    PRESSEDFUNC	    ; check for which buttons are pressed and continue to loops
     GOTO    _start1	    ;restart the main program and loop through	
 
 BUTTONSCONFIG:
@@ -177,8 +177,7 @@ incloop:
     RETURN
 
 buttonbonly:	    ;function for when only button B is pressed
-;    BTFSS   PORTB,0
-;    RETURN
+
 decloop: 
     DECF    FSR0L,F	;load the next address
     BCF  FSR0L, 4
