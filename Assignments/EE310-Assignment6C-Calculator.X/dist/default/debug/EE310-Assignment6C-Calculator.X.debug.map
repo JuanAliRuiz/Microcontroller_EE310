@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v3.00\pic\dat\20241204225717_en.msgs \
   -cn -h+dist/default/debug\EE310-Assignment6C-Calculator.X.debug.sym \
   --cmf=dist/default/debug\EE310-Assignment6C-Calculator.X.debug.cmf -z \
-  -Q18F47K42 -oC:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_3.o \
+  -Q18F47K42 -oC:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/debug/EE310-Assignment6C-Calculator.X.debug.map \
-  --md=C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
   -ASMALLCONST=02000h-020FFhx224,012000h-0120FFhx224 \
   -AMEDIUMCONST=02000h-0FFFFh,012000h-01FFFFh -ACOMRAM=01h-05Fh \
@@ -34,7 +34,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_9.o \
+  C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_9.o \
   dist/default/debug\EE310-Assignment6C-Calculator.X.debug.o 
 
 Object code version is 3.11
@@ -44,7 +44,7 @@ Machine type is 18F47K42
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_9.o
+C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_9.o
                 config                           300000   300000        A        0       4
                 init                              1FFFC    1FFFC        4     FFFE       0
                 reset_vec                             0        0        4        0       0
@@ -63,7 +63,7 @@ dist/default/debug\EE310-Assignment6C-Calculator.X.debug.o
                 text1                              26D0     26D0       6E     100E       0
                 text0                              201C     201C      1FE     100E       0
                 cstackCOMRAM                          1        1       12        1       1
-                bssCOMRAM                            13       13        A        1       1
+                bssCOMRAM                            13       13        9        1       1
                 cinit                              280E     280E       12     100E       0
 
 TOTAL           Name                               Link     Load   Length     Space
@@ -92,7 +92,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 
         CLASS   COMRAM         
                 cstackCOMRAM                          1        1       12         1
-                bssCOMRAM                            13       13        A         1
+                bssCOMRAM                            13       13        9         1
 
         CLASS   ABS1           
 
@@ -186,7 +186,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                cstackCOMRAM                   000001  00001C  00001D         1       1  COMRAM  
+                cstackCOMRAM                   000001  00001B  00001C         1       1  COMRAM  
                 smallconst                     002000  00001C  00201C      1000       0  SMALLCON
                 text0                          00201C  000810  00282C      100E       0  CODE    
                 init                           01FFFC  000004  020000      FFFE       0  CODE    
@@ -227,11 +227,11 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
-        BIGRAM           00001D-001FFF             1FE3
+        BIGRAM           00001C-001FFF             1FE4
         BIGSFR           003800-003FFF              800
         CODE             000004-001FFF             1FFC
                          00282C-01FFFB            1D7D0
-        COMRAM           00001D-00005F               43
+        COMRAM           00001C-00005F               44
         CONST            000004-001FFF             1FFC
                          00282C-01FFFB            1D7D0
         EEDATA           310000-3103FF              400
@@ -251,13 +251,13 @@ _ANSELA                      (abs)        003A40
 _ANSELB                      (abs)        003A50
 _ANSELC                      (abs)        003A60
 _ANSELD                      (abs)        003A70
-_Display_Result_REG          bssCOMRAM    000019
+_Display_Result_REG          bssCOMRAM    000018
 _LATA                        (abs)        003FBA
 _LATB                        (abs)        003FBB
 _LATBbits                    (abs)        003FBB
 _LATC                        (abs)        003FBC
 _LATD                        (abs)        003FBD
-_Operation_REG               bssCOMRAM    00001A
+_Operation_REG               bssCOMRAM    000019
 _PORTA                       (abs)        003FCA
 _PORTAbits                   (abs)        003FCA
 _PORTBbits                   (abs)        003FCB
@@ -269,8 +269,8 @@ _TRISA                       (abs)        003FC2
 _TRISB                       (abs)        003FC3
 _TRISC                       (abs)        003FC4
 _TRISD                       (abs)        003FC5
-_X_Input_REG                 bssCOMRAM    00001C
-_Y_Input_REG                 bssCOMRAM    00001B
+_X_Input_REG                 bssCOMRAM    00001B
+_Y_Input_REG                 bssCOMRAM    00001A
 __HRAM                       (abs)        000000
 __H__absolute__              __absolute__ 000000
 __Habs1                      abs1         000000
@@ -346,7 +346,7 @@ __Hrparam                    rparam       000000
 __Hsfr                       sfr          000000
 __Hsmallconst                smallconst   00201C
 __Hspace_0                   (abs)        020000
-__Hspace_1                   (abs)        00001D
+__Hspace_1                   (abs)        00001C
 __Hspace_2                   (abs)        000000
 __Hspace_4                   (abs)        60000A
 __Hstack                     stack        000000
@@ -458,7 +458,7 @@ __Ltext7                     text7        000000
 __Ltext8                     text8        000000
 __Ltext9                     text9        000000
 __S0                         (abs)        020000
-__S1                         (abs)        00001D
+__S1                         (abs)        00001C
 __S4                         (abs)        000000
 __S5                         (abs)        000000
 ___awdiv                     text7        0024D0
@@ -526,19 +526,18 @@ __ptext9                     text9        0027DA
 __ramtop                     ramtop       002000
 __smallconst                 smallconst   002000
 _calculate_result            text8        002640
-_current_input               bssCOMRAM    000018
+_current_input               bssCOMRAM    000017
 _displayEE                   text9        0027DA
 _display_number              text5        0023C4
-_error_message               bssCOMRAM    000015
 _keypad                      smallconst   002001
 _main                        text0        00201C
-_operand                     bssCOMRAM    000017
+_operand                     bssCOMRAM    000016
 _result                      bssCOMRAM    000013
 _scan_keypad                 text2        00221A
 _segMap                      smallconst   002011
 _setup_keypadports           text4        002820
 _setup_sevensegports         text3        002798
-_state                       bssCOMRAM    000016
+_state                       bssCOMRAM    000015
 _waitfor_key                 text1        0026D0
 display_number@neg           cstackCOMRAM 00000F
 display_number@ones          cstackCOMRAM 00000E

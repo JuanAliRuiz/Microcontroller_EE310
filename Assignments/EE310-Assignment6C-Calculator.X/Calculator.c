@@ -4,13 +4,22 @@
  * ---------------------
  * Program Details:
  *  The purpose of this program is to make a calculator
- * Inputs: get_key() from the keypad
- * Outputs: display_number() onto seven segments
+ * Inputs: 4x4 Keypad using PORTB where; 
+ * Numbers '1-9' are the X_Input_REG and Y_Input_REG
+ * 'A' performs addition
+ * 'B' performs substraction
+ * 'C' performs multiplication
+ * 'D' Performs division
+ * '*' Performs clear
+ * '#' Gets a result of the operations
+ * Outputs: Dual Seven segments are configured using PORTC and PORTA0 & PORTA1
+ *  where one seven segment display shows the tens place and the second shows the ones place
  * Setup: C- Simulator
  * Date: 05 April, 2025
  * File Dependencies / Libraries: It is required to include the 
  * Configuration Header File 
  * Compiler: xc8, 3.0
+ * MPLAB X IDE v6.20
  * Author: Juan Ali Ruiz Guzman
  * Versions:
  *      V1.0: 05 April 2025 - Creation of keypad and seven segment configurations
@@ -37,17 +46,13 @@
 #define _XTAL_FREQ 4000000 // Fosc frequency for _delay() library
 #define FCY (_XTAL_FREQ / 4)
 
-#define DIGIT1 0x01
-#define DIGIT2 0x02
-
 unsigned char X_Input_REG = 0;
 unsigned char Y_Input_REG = 0;
 unsigned char Operation_REG = 0;
 signed char Display_Result_REG = 0;
 unsigned char current_input = 0;  // Tracks live input (00?99)
 char operand = 0;                 // 'A', 'B', 'C', 'D'
-char state = 0; // 0 = input X_Input_REG, 1 = operand pressed, 2 = input Y_input_REG, 3 = show result
-char error_message = 0;
+char state = 0; // 0 = input X_Input_REG & Operand pressed, 1 = input Y_input_REG, 2 = show result
 signed int result = 0;
 
 void calculate_result();
@@ -209,7 +214,6 @@ char waitfor_key() {
 
 // Function for Calculation
 void calculate_result() {
-//    error_message = 0;
 
     if (operand == '+') {
         Display_Result_REG = X_Input_REG + Y_Input_REG;

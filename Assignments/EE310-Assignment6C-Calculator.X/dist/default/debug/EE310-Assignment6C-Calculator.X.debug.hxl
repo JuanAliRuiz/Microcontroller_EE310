@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_3.o
+ C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_3.o
  -Odist/default/debug\EE310-Assignment6C-Calculator.X.debug.hex
  -logfile=dist/default/debug\EE310-Assignment6C-Calculator.X.debug.hxl
  -addressing=1
@@ -9,10 +9,10 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_3.o)
-  2000h - 282Bh		(C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_3.o)
-  1FFFCh - 1FFFFh		(C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_3.o)
-  300000h - 300009h		(C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_3.o)
+  2000h - 282Bh		(C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_3.o)
+  1FFFCh - 1FFFFh		(C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_3.o)
+  300000h - 300009h		(C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_3.o)
  Unused ranges:
   4h - 1FFFh
   282Ch - 1FFFBh
@@ -21,7 +21,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\jargs\AppData\Local\Temp\xcAsobk.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\jargs\AppData\Local\Temp\xcAsu5s.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------

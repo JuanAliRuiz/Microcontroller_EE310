@@ -33,21 +33,21 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"57 C:\Users\jargs\MPLABXProjects\EE310-Assignment6C-Calculator.X\Calculator.c
+"62 C:\Users\jargs\MPLABXProjects\EE310-Assignment6C-Calculator.X\Calculator.c
 [v _main main `(v  1 e 1 0 ]
-"142
+"147
 [v _setup_keypadports setup_keypadports `(v  1 e 1 0 ]
-"148
+"153
 [v _setup_sevensegports setup_sevensegports `(v  1 e 1 0 ]
-"168
+"173
 [v _scan_keypad scan_keypad `(uc  1 e 1 0 ]
-"196
+"201
 [v _waitfor_key waitfor_key `(uc  1 e 1 0 ]
-"211
+"216
 [v _calculate_result calculate_result `(v  1 e 1 0 ]
-"238
+"242
 [v _displayEE displayEE `(v  1 e 1 0 ]
-"250
+"254
 [v _display_number display_number `(v  1 e 1 0 ]
 "8017 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f47k42.h
 [v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
@@ -159,71 +159,71 @@
 "46959
 "46959
 [v _PORTDbits PORTDbits `VES183  1 e 1 @16333 ]
-"43 C:\Users\jargs\MPLABXProjects\EE310-Assignment6C-Calculator.X\Calculator.c
+"49 C:\Users\jargs\MPLABXProjects\EE310-Assignment6C-Calculator.X\Calculator.c
 [v _X_Input_REG X_Input_REG `uc  1 e 1 0 ]
-"44
+"50
 [v _Y_Input_REG Y_Input_REG `uc  1 e 1 0 ]
-"45
-[v _Operation_REG Operation_REG `uc  1 e 1 0 ]
-"46
-[v _Display_Result_REG Display_Result_REG `c  1 e 1 0 ]
-"47
-[v _current_input current_input `uc  1 e 1 0 ]
-"48
-[v _operand operand `uc  1 e 1 0 ]
-"49
-[v _state state `uc  1 e 1 0 ]
 "51
+[v _Operation_REG Operation_REG `uc  1 e 1 0 ]
+"52
+[v _Display_Result_REG Display_Result_REG `c  1 e 1 0 ]
+"53
+[v _current_input current_input `uc  1 e 1 0 ]
+"54
+[v _operand operand `uc  1 e 1 0 ]
+"55
+[v _state state `uc  1 e 1 0 ]
+"56
 [v _result result `i  1 e 2 0 ]
-"122
+"127
 [v _keypad keypad `C[4][4]uc  1 e 16 0 ]
-"129
+"134
 [v _segMap segMap `C[10]uc  1 e 10 0 ]
-"57
+"62
 [v _main main `(v  1 e 1 0 ]
 {
-"62
+"67
 [v main@key key `uc  1 a 1 17 ]
-"120
+"125
 } 0
-"196
+"201
 [v _waitfor_key waitfor_key `(uc  1 e 1 0 ]
 {
-"198
+"203
 [v waitfor_key@timeout timeout `i  1 a 2 5 ]
-"197
+"202
 [v waitfor_key@key key `uc  1 a 1 7 ]
-"208
+"213
 } 0
-"168
+"173
 [v _scan_keypad scan_keypad `(uc  1 e 1 0 ]
 {
-"171
+"176
 [v scan_keypad@row row `i  1 a 2 2 ]
-"192
+"197
 } 0
-"148
+"153
 [v _setup_sevensegports setup_sevensegports `(v  1 e 1 0 ]
 {
-"164
+"169
 } 0
-"142
+"147
 [v _setup_keypadports setup_keypadports `(v  1 e 1 0 ]
 {
-"146
+"151
 } 0
-"250
+"254
 [v _display_number display_number `(v  1 e 1 0 ]
 {
-"253
+"257
 [v display_number@neg neg `a  1 a 1 14 ]
-"262
+"266
 [v display_number@ones ones `uc  1 a 1 13 ]
-"261
+"265
 [v display_number@tens tens `uc  1 a 1 12 ]
-"250
+"254
 [v display_number@result result `i  1 p 2 8 ]
-"278
+"282
 } 0
 "7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
@@ -249,15 +249,15 @@
 [v ___awdiv@divisor divisor `i  1 p 2 2 ]
 "41
 } 0
-"211 C:\Users\jargs\MPLABXProjects\EE310-Assignment6C-Calculator.X\Calculator.c
+"216 C:\Users\jargs\MPLABXProjects\EE310-Assignment6C-Calculator.X\Calculator.c
 [v _calculate_result calculate_result `(v  1 e 1 0 ]
 {
-"236
+"240
 } 0
-"238
+"242
 [v _displayEE displayEE `(v  1 e 1 0 ]
 {
-"247
+"251
 } 0
 "4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lbdiv.c
 [v ___lbdiv __lbdiv `(uc  1 e 1 0 ]

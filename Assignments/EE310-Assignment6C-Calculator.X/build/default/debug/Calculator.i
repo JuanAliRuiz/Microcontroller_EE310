@@ -7,7 +7,7 @@
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "Calculator.c" 2
-# 29 "Calculator.c"
+# 38 "Calculator.c"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -26872,7 +26872,7 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 2 3
-# 30 "Calculator.c" 2
+# 39 "Calculator.c" 2
 # 1 "./MyConfigFile.h" 1
 
 #pragma config FEXTOSC = LP
@@ -26923,7 +26923,7 @@ unsigned char __t3rd16on(void);
 
 
 #pragma config CP = OFF
-# 31 "Calculator.c" 2
+# 40 "Calculator.c" 2
 # 1 "./PeripheralSetup.h" 1
 # 10 "./PeripheralSetup.h"
 # 1 "./PragmaConfig.h" 1
@@ -27508,7 +27508,7 @@ double y0(double);
 double y1(double);
 double yn(int, double);
 # 14 "./PeripheralSetup.h" 2
-# 34 "./PeripheralSetup.h"
+# 32 "./PeripheralSetup.h"
 void setup_keypadports(void);
 void setup_sevensegports(void);
 
@@ -27519,15 +27519,12 @@ char waitfor_key(void);
 
 extern const char keypad[4][4];
 extern const char segMap[10];
-# 32 "Calculator.c" 2
+# 41 "Calculator.c" 2
 
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/stdbool.h" 1 3
-# 36 "Calculator.c" 2
-
-
-
+# 45 "Calculator.c" 2
 
 
 
@@ -27539,7 +27536,6 @@ signed char Display_Result_REG = 0;
 unsigned char current_input = 0;
 char operand = 0;
 char state = 0;
-char error_message = 0;
 signed int result = 0;
 
 void calculate_result();
@@ -27701,7 +27697,6 @@ char waitfor_key() {
 
 
 void calculate_result() {
-
 
     if (operand == '+') {
         Display_Result_REG = X_Input_REG + Y_Input_REG;
